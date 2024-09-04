@@ -1,0 +1,115 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.google{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 11%;
+    width: 35%; 
+    flex-direction: column;
+    align-items: center ;
+}
+    .botao{
+        margin-top: 10px;
+}
+.but{
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: black;
+    border-radius: 4px;
+    padding: 0 16px;
+    margin-inline: 3px;
+    margin-top: 20px;
+}
+.pesquisa{
+    border-radius: 30px;
+    width: 520px;
+    height: 38px;
+    margin-top: 20px;
+}.input-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; /* Espaço para o ícone */
+    box-sizing: border-box;
+}
+
+.input-container .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ícone não interfere na interação com o input */
+}
+/* Reset básico para garantir um layout consistente */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav {
+    background-color: #333;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu > .menu-item > a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    transition: background-color 0.3s;
+}
+
+.menu > .menu-item > a:hover {
+    background-color: #444;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.submenu li {
+    border-bottom: 1px solid #666;
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #555;
+}
+
+.submenu a:hover {
+    background-color: #666;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
